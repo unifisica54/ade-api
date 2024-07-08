@@ -45,9 +45,9 @@ class HoraExtraController extends Controller
     });
 
     // Return response
-    if ($data->isEmpty()) {
+    /*if ($data->isEmpty()) {
         return response()->json(['data' => false, 'message' => 'No existe registro']);
-    }
+    }*/
     return response()->json(['data' => $data, 'message' => 'Listado con éxito!']);
 
 
