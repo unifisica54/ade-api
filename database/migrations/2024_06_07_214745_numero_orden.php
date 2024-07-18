@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('numero_orden', function (Blueprint $table) {
             $table->id();
             $table->string('numero', 20);
-            $table->bigInteger('cantidad')->nullable();
             $table->bigInteger('casos_id')->nullable();
             $table->bigInteger('guia_devolucion_id')->nullable();
             $table->timestamps();

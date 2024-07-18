@@ -18,6 +18,7 @@ class OrdenRefaccion extends ModelMain
     public $timestamps = false;
 
     protected $fillable = [
+        'cantidad',
         'refaccion_id',
         'numero_orden_id',
         'users_id',

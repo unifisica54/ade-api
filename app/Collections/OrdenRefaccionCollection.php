@@ -9,6 +9,7 @@ class OrdenRefaccionCollection extends Collection
     {
        
         return array_merge([
+            'cantidad' => $request['cantidad'],
             'refaccion_id'=> $request['refaccion_id'],
             'numero_orden_id'=> $request['numero_orden_id'],
             'users_id'=> auth()->user()->id,

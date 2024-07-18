@@ -54,7 +54,7 @@ class OrdenRefaccionController extends Controller
             return [
                 'id' => $ordenRefaccion->id,
                 'numero_orden' => optional($ordenRefaccion->numero_orden)->numero ?? '',
-                'cantidad' => optional($ordenRefaccion->numero_orden)->cantidad ?? '',
+                'cantidad' => $ordenRefaccion->cantidad,
                 'numero_guia' => optional(optional($ordenRefaccion->numero_orden)->guia_devolucion)->numero ?? '',
                 'numero_parte' => optional($ordenRefaccion->refaccion)->numero_parte ?? '',
                 'numero_casos' => optional(optional($ordenRefaccion->numero_orden)->casos)->numero ?? '',

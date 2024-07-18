@@ -29,7 +29,6 @@ class NumeroOrdenRequest extends FormRequest
         $object=$this->uniqueRuleService->Edit($this->id,$this->model);
         return [
             'numero' => $this->uniqueRuleService->UniqueRule($object,'numero',$this,$this->model,['required', 'string']),
-            'cantidad' => 'nullable|numeric',
             'casos_id' => 'nullable|numeric',
             'guia_devolucion_id' => 'nullable|numeric',
         ];

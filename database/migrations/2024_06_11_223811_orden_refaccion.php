@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('refaccion_id')->nullable();
             $table->bigInteger('numero_orden_id')->nullable();
+            $table->bigInteger('cantidad')->nullable();
             $table->timestamps();
             $table->bigInteger('users_id')->nullable();
             $table->bigInteger('status')->nullable();

@@ -30,6 +30,7 @@ class OrdenRefaccionRequest extends FormRequest
 
         $object=$this->uniqueRuleService->Edit($this->id,$this->model);
         return [
+            'cantidad' => 'nullable|numeric',
             'refaccion_id' => 'nullable|numeric',
             'numero_orden_id' => 'nullable', 'numeric',
         ];

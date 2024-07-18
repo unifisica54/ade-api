@@ -18,7 +18,6 @@ class NumeroOrden extends ModelMain
 
     protected $fillable = [
         'numero',
-        'cantidad',
         'casos_id',
         'guia_devolucion_id',
         'users_id',

@@ -11,7 +11,6 @@ class NumeroOrdenCollection extends Collection
     {
         return array_merge([
             'numero' => $request['numero'],
-            'cantidad' => $request['cantidad'],
             'casos_id' => $request['casos_id'],
             'guia_devolucion_id' => $request['guia_devolucion_id'],
             'users_id'=> auth()->user()->id,
