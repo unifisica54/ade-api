@@ -27,7 +27,8 @@ class CasosRequest extends FormRequest
     {
         $object=$this->uniqueRuleService->Edit($this->id,$this->model);
         return [
-            'numero' => $this->uniqueRuleService->UniqueRule($object,'numero',$this,$this->model,['required', 'string']),
+            //'numero' => $this->uniqueRuleService->UniqueRule($object,'numero',$this,$this->model,['required', 'string']),
+            'numero' => 'nullable|string',
             'tarea' => 'nullable|string',
             'fecha' => 'nullable|string|date_format:Y-m-d',
             'hora' => 'nullable|string',
